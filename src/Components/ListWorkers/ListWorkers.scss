@@ -1,0 +1,165 @@
+.list-workers {
+    width: 100%;
+    height: 100%;
+
+    &__header {
+        background-color: rgb(48, 47, 45);
+    }
+
+    &__content {
+        height: calc(100vh - 10.3rem);
+        overflow: auto;
+    }
+
+    &__content::-webkit-scrollbar {
+        display: none;
+    }
+
+    &__title-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 6.5rem;
+        border-radius: 0.3rem;
+        padding: 0.6rem;
+        position: sticky;
+        top: 0;
+    }
+
+    &__title {
+        font-size: 2rem;
+        width: 33.3%;
+        color: burlywood;
+    }
+
+    &__filters-block {
+        width: 33.3%;
+    }
+
+    &__btn-box {
+        width: 33.3%;
+
+    }
+
+    &__btn-add {
+        padding: 1.5rem 1rem;
+        background-color: rgb(35, 44, 44);
+        color: burlywood;
+        border-radius: 0.3rem;
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        font-size: 1rem;
+        transition-duration: 0.3s;
+    }
+
+    &__btn-add:hover {
+        transform: scale(1.1);
+        // background-color: burlywood;
+    }
+
+    &__list {
+        margin-top: 2rem;
+    }
+
+    &__statistics {
+        height: 3.5rem;
+        background-color: rgb(48, 47, 45);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__statistics-info {
+        font-size: 1.3rem;
+        color: burlywood;
+    }
+}
+
+
+
+
+@media (max-width: 1023px) {
+    .list-workers {
+
+        &__content {
+            height: calc(100vh - 10rem);
+        }
+
+        &__title-block {
+            height: 6.5rem;
+            padding: 0.5rem;
+        }
+
+        &__title {
+            font-size: 1.4rem;
+        }
+
+        &__btn-add {
+            padding: 1rem 1rem;
+            font-size: 0.8rem;
+        }
+
+        &__list {
+            margin-top: 2rem;
+        }
+
+        &__statistics {
+            height: 3.5rem;
+
+        }
+
+        &__statistics-info {
+            font-size: 1rem;
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .list-workers {
+
+        &__content {
+            height: calc(100vh - 10rem);
+        }
+
+        &__title-block {
+
+            height: 6.5rem;
+        }
+
+        &__title {
+            font-size: 1rem;
+        }
+
+        &__btn-add {
+            padding: 0.8rem 0.5rem;
+            font-size: 0.7rem;
+        }
+
+        &__list {
+            margin-top: 1.5rem;
+        }
+
+        &__statistics {
+            height: 2.5rem;
+            margin-top: 1rem;
+        }
+
+        &__statistics-info {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+
+@media (max-width: 425px) {
+
+    .list-workers {
+        &__btn-add {
+            padding: 0.8rem 0.1rem;
+            font-size: 0.5rem;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.select-item {
+    padding: 0.3rem;
+    // background-color: white;
+    background-color: burlywood;
+    margin-bottom: 0.2rem;
+    margin-right: 0.1rem;
+    margin-left: 0.1rem;
+    border-radius: 0.3rem;
+    width: 7.7rem;
+    display: block;
+}
+
+
+@media (max-width: 767px) {
+
+    .select-item {
+        padding: 0.2rem;
+        margin-bottom: 0.1rem;
+        margin-right: 0.1rem;
+        margin-left: 0.1rem;
+        width: 7.7rem;
+
+    }
+}
+
+@media (max-width: 425px) {
+    .select-item {
+        padding: 0.2rem;
+        margin-bottom: 0.3rem;
+        margin-right: 0.1rem;
+        margin-left: 0.1rem;
+        width: 5.7rem;
+        font-size: 0.5rem;
+
+    }
+
+
+}

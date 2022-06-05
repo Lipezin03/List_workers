@@ -1,15 +1,8 @@
 import React from "react";
 import { FC } from "react";
-import { PositionUser } from "../../Service/ClassPositionUser"
-import { Database } from "../../Service/Database"
-import { useMemo } from "react"
+import "./MySelect.scss";
 
 
-
-// export interface IOptions {
-//     value: string;
-//     name: string;
-// }
 
 interface MySelectProps {
     options: string[];
@@ -21,10 +14,9 @@ interface MySelectProps {
 
 export const MySelect: FC<MySelectProps> = ({ options, defaultValue, value, onChange }) => {
 
-
-
     return (
         <select
+            className="select-item"
             value={value}
             onChange={(ev: React.ChangeEvent<HTMLSelectElement>) => onChange(ev.target.value)}
         >

@@ -1,0 +1,94 @@
+.edit-worker {
+    width: 21.8rem;
+
+    &__title {
+        font-size: 1.3rem;
+        color: burlywood;
+        text-align: center;
+    }
+
+    &__input {
+        padding: 0.6rem;
+        margin: 0.4rem 0;
+        border-radius: 0.3rem;
+        background-color: burlywood;
+        width: 100%;
+        display: block;
+        font-size: 1.1rem;
+
+    }
+
+    p {
+        width: inherit;
+        padding: 5px;
+    }
+
+    &__btn {
+        padding: 0.4rem;
+        background-color: rgba(17, 73, 66, 0.7);
+        color: burlywood;
+        border-radius: 0.3rem;
+        transition-duration: 0.3s;
+        width: 140px;
+        display: block;
+        margin: 0.5rem auto;
+    }
+
+    &__btn:hover {
+        transform: scale(1.1);
+    }
+
+    &__message-error {
+        color: red;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1023px) {
+
+    .edit-worker {
+        width: 18.7rem;
+
+        &__title {
+            font-size: 1rem;
+        }
+
+        &__input {
+            padding: 0.3rem;
+            margin: 0.1rem 0;
+            border-radius: 0.3rem;
+            font-size: 1rem;
+
+        }
+
+        &__btn {
+            width: 10rem;
+            display: block;
+        }
+    }
+}
+
+
+@media (max-width: 426px) {
+
+    .edit-worker {
+        width: 12.5rem;
+
+        &__title {
+            font-size: 1rem;
+        }
+
+        &__input {
+            padding: 0.3rem;
+            margin: 0.1rem 0;
+            border-radius: 0.3rem;
+            font-size: 1rem;
+
+        }
+
+        &__btn {
+            width: 10rem;
+            display: block;
+        }
+    }
+}

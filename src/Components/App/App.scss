@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1160px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(35, 44, 44);
+    background-color: dimgrey;
+    background-image: url(../../../public/img/111.jpg);
+    background-size: cover;
+}

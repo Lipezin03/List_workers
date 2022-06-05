@@ -1,13 +1,13 @@
 import React from 'react';
-import { ListPersonnel } from './Components/ListPersonnel/ListPersonnel';
-
+import { ListWorkers } from '../ListWorkers/ListWorkers';
+import "./App.scss";
 
 const App: React.FC = () => {
 
   return (
 
     <div className="App">
-      <ListPersonnel />
+      <ListWorkers />
     </div>
   );
 }

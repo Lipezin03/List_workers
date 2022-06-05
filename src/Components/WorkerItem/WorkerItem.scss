@@ -1,0 +1,179 @@
+.worker-item {
+
+    &__content {}
+
+    &__user-name {
+        cursor: pointer;
+        color: white;
+        text-align: center;
+        font-size: 1.9rem;
+        padding: 0.6rem;
+        margin: 0.6rem;
+        border-radius: 10px;
+        background-color: rgba(17, 73, 66, 0.7);
+        box-shadow: 0px 0px 8px 0px black;
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__user-name:hover {
+        color: burlywood;
+    }
+
+    &__full-info {}
+
+    &__full-info-content {
+        // color: aliceblue;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    &__ul {
+        font-size: 1.6rem;
+        list-style: none;
+        color: aliceblue;
+    }
+
+    &__li {
+        margin: 1rem;
+    }
+
+    &__li span {
+        color: burlywood;
+    }
+
+    &__btns-block {
+        padding-top: 1rem;
+    }
+
+    &__btn {
+        padding: 1rem;
+        border-radius: 0.3rem;
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+        margin-bottom: 0.5rem;
+        width: 11.2rem;
+        font-size: 0.95rem;
+        transition-duration: 0.3s;
+    }
+
+    &__btn:last-child {
+        width: 13.2rem;
+
+    }
+
+    &__btn:hover {
+        transform: scale(1.1);
+        background-color: burlywood;
+    }
+
+    &__message-info {
+        color: red;
+        font-size: 1.7rem;
+    }
+
+}
+
+
+
+
+@media (max-width: 1023px) {
+
+    .worker-item {
+
+        &__user-name {
+
+            font-size: 1.3rem;
+            padding: 0.3rem;
+            margin: 0.3rem;
+            border-radius: 0.6rem;
+
+            padding: 1.6rem;
+            margin-bottom: 1.2rem;
+        }
+
+
+        &__full-info-content {
+            padding-bottom: 1.3rem;
+        }
+
+        &__ul {
+            font-size: 1.1rem;
+        }
+
+        &__li {
+            margin: 0.6rem;
+        }
+
+        &__btns-block {
+            padding-top: 0.6rem;
+        }
+
+        &__btn {
+            padding: 0.6rem;
+            border-radius: 0.3rem;
+            margin-left: 0.2rem;
+            margin-right: 0.2rem;
+            width: 9rem;
+            font-size: 0.7rem;
+            transition-duration: 0.3s;
+        }
+
+        &__btn:last-child {
+            width: 9rem;
+        }
+
+        &__message-info {
+
+            font-size: 1.3rem;
+        }
+    }
+}
+
+
+@media (max-width: 426px) {
+
+    .worker-item {
+
+        &__user-name {
+
+            font-size: 0.9rem;
+            padding: 0.3rem;
+            margin: 0.3rem;
+            padding: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+
+        &__full-info-content {
+            padding-bottom: 1rem;
+        }
+
+        &__ul {
+            font-size: 0.9rem;
+        }
+
+        &__li {
+            margin: 0.4rem;
+        }
+
+        &__btns-block {
+            padding-top: 0.6rem;
+        }
+
+        &__btn {
+            padding: 0.3rem;
+            border-radius: 0.3rem;
+            margin-left: 0.2rem;
+            margin-right: 0.2rem;
+            width: 6rem;
+            font-size: 0.5rem;
+            transition-duration: 0.3s;
+        }
+
+        &__message-info {
+
+            font-size: 0.9rem;
+        }
+    }
+}

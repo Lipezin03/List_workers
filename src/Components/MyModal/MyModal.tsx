@@ -1,6 +1,6 @@
 import React from "react";
 import { FC } from "react";
-import "./MyModal.scss"
+import "./MyModal.scss";
 
 interface ModalProps {
     active: boolean;
