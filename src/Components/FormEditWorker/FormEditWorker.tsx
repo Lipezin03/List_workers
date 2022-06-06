@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Worker } from "../../Service/ClassWorker";
 import { update } from "firebase/database";
 import { getWorkersRef } from "../../Service/firebase";
-import { IWiorkerUpdate } from "../../Service/MyInterfaces";
+import { IWorker } from "../../Service/MyInterfaces";
 import "./FormEditWorker.scss";
 
 
@@ -117,7 +117,7 @@ export const FormEditWorker: FC<FormEditWorkerProps> = ({ active, itemWorker, se
 
         if (itemWorker) {
 
-            const changeUser: IWiorkerUpdate = {
+            const changeUser: Omit<IWorker, "id"> = {
                 name: valName,
                 lastname: valLastname,
                 patronymic: valPatronymic,

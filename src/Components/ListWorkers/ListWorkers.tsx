@@ -9,7 +9,7 @@ import { FormEditWorker } from "../FormEditWorker/FormEditWorker";
 import { onValue, set } from "firebase/database";
 import { workersRef, getWorkersRef } from "../../Service/firebase";
 import { uid } from "uid";
-import { IWiorker } from "../../Service/MyInterfaces";
+import { IWorker } from "../../Service/MyInterfaces";
 import "./ListWorkers.scss";
 
 
@@ -19,7 +19,8 @@ export const ListWorkers: FC = () => {
     const [activModal, setActivModal] = useState<boolean>(false);
     const [selectValuePosition, setSelectValuePosition] = useState<string>("");
     const [selectValueDepartment, setSelectValueDepartment] = useState<string>("");
-    const [filterListWorkers, setFilterListWorkers] = useState<Worker[] | null>(null);
+    const [filterListWorkers, setFilterListWorkers] = useState<Worker[]>([]);
+
 
     const doubleFilter = (selPosition: string, selDepartment: string): Worker[] => {
 
@@ -74,7 +75,7 @@ export const ListWorkers: FC = () => {
 
     const getFilterListWorkers = useMemo(() => {
 
-        if (!filterListWorkers) {
+        if (filterListWorkers.length === 0) {
             return listWorkers;
         } else {
             return filterListWorkers;
@@ -95,7 +96,7 @@ export const ListWorkers: FC = () => {
         department: number | string
     ): void => {
 
-        const newEser: IWiorker = {
+        const newEser: IWorker = {
             id: uid(),
             name: name,
             lastname: lastname,
@@ -142,7 +143,6 @@ export const ListWorkers: FC = () => {
                 </div>
             </header>
             <div className="list-workers__content container">
-
 
                 <div className="list-workers__list">
                     {getFilterListWorkers?.map((user) => {

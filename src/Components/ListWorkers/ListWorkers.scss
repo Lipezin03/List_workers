@@ -7,7 +7,7 @@
     }
 
     &__content {
-        height: calc(100vh - 10.3rem);
+        height: calc(100vh - 10rem);
         overflow: auto;
     }
 
@@ -56,7 +56,6 @@
 
     &__btn-add:hover {
         transform: scale(1.1);
-        // background-color: burlywood;
     }
 
     &__list {
@@ -75,6 +74,7 @@
         font-size: 1.3rem;
         color: burlywood;
     }
+
 }
 
 
@@ -113,46 +113,46 @@
         &__statistics-info {
             font-size: 1rem;
         }
+
+    }
+
+
+    @media (max-width: 767px) {
+        .list-workers {
+
+            &__content {
+                height: calc(100vh - 10rem);
+            }
+
+            &__title-block {
+
+                height: 6.5rem;
+            }
+
+            &__title {
+                font-size: 1rem;
+            }
+
+            &__btn-add {
+                padding: 0.8rem 0.5rem;
+                font-size: 0.7rem;
+            }
+
+            &__list {
+                margin-top: 1.5rem;
+            }
+
+            &__statistics {
+                height: 2.5rem;
+                margin-top: 1rem;
+            }
+
+            &__statistics-info {
+                font-size: 0.7rem;
+            }
+        }
     }
 }
-
-
-@media (max-width: 767px) {
-    .list-workers {
-
-        &__content {
-            height: calc(100vh - 10rem);
-        }
-
-        &__title-block {
-
-            height: 6.5rem;
-        }
-
-        &__title {
-            font-size: 1rem;
-        }
-
-        &__btn-add {
-            padding: 0.8rem 0.5rem;
-            font-size: 0.7rem;
-        }
-
-        &__list {
-            margin-top: 1.5rem;
-        }
-
-        &__statistics {
-            height: 2.5rem;
-            margin-top: 1rem;
-        }
-
-        &__statistics-info {
-            font-size: 0.7rem;
-        }
-    }
-}
-
 
 @media (max-width: 425px) {
 

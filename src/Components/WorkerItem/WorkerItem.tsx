@@ -47,7 +47,7 @@ export const WorkerItem: FC<WorkerItemProps> = ({ itemWorker }) => {
     return (
         <div className="worker-item">
             <div className="worker-item__content">
-                <div className=""></div>
+
                 <h3
                     className="worker-item__user-name"
                     onClick={getShowInfo}

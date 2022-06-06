@@ -10,7 +10,7 @@ interface FilterBlockProps {
     selectValueDepartment: string;
     setSelectValuePosition: React.Dispatch<React.SetStateAction<string>>;
     setSelectValueDepartment: React.Dispatch<React.SetStateAction<string>>;
-    setFilterListWorkers: React.Dispatch<React.SetStateAction<Worker[] | null>>;
+    setFilterListWorkers: React.Dispatch<React.SetStateAction<Worker[]>>;
 }
 
 export const FilterBlock: FC<FilterBlockProps> = ({ listWorkers, selectValuePosition, selectValueDepartment, setSelectValueDepartment, setSelectValuePosition, setFilterListWorkers }) => {
@@ -46,7 +46,7 @@ export const FilterBlock: FC<FilterBlockProps> = ({ listWorkers, selectValuePosi
 
     const updateList = () => {
         // window.location.reload();
-        setFilterListWorkers(null);
+        setFilterListWorkers([]);
         setSelectValueDepartment("")
         setSelectValuePosition("")
     }
